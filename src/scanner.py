@@ -8,12 +8,22 @@
 #python version 3 
 import socket 
 
-host = "127.0.0.1"
+host = input("Enter the ip address:")
 portlist =[8000]
 
 for port in portlist: 
-	socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	socket.settimeout(2)
-	result = socket.connect_ex((host,port))
+	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	try:
+		sock.settimeout(5)
+		result=sock.connect_ex((host,port))
+		if result == 0:
+			print("Connection accepted for port", port, "- code:", result)
+		elif:
+			print("Connection failed for port", port, "- code:", result)			
+		
+	except socket.error:
+		print("Connection Error")	
+	finally:	
+		sock.close()
 
-print(port, ":", result)
+
