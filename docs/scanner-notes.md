@@ -8,6 +8,10 @@ Python 3 and extended it with IPv4 validation, port validation, port
 ranges, multiple hosts, and readable connection status messages.
 
 ## Initial test — 15 November 2026
+Python 3 and tested it with a local HTTP server on Kali Linux, comparing
+the results with the server running and stopped.
+
+## Test evidence
 
 I used `curl` to confirm that the local HTTP server responded on
 `127.0.0.1:8000` while running and stopped accepting connections after
@@ -49,6 +53,8 @@ the configured timeout.
 
 ![Scanner processes a port range and an individual port, returning code 11](images/scanner-timeout-range.png)
 
+
+![TCP scanner output: port 8000 returns 111 after shutdown](images/scanner-111.png)
 
 ## Bibliographic reference
 
