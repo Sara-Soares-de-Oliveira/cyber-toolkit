@@ -1,3 +1,7 @@
+# Adapted from the TCP port scanning example in Python Penetration
+# Testing Essentials, Packt Publishing, January 2015.
+# ISBN: 978-1-78439-858-3.
+#python version 3 
 import socket
 
 hosts_input = input(
