@@ -54,8 +54,6 @@ the configured timeout.
 ![Scanner processes a port range and an individual port, returning code 11](images/scanner-timeout-range.png)
 
 
-![TCP scanner output: port 8000 returns 111 after shutdown](images/scanner-111.png)
-
 ## Bibliographic reference
 
 Mohit. (2015). *Python Penetration Testing Essentials*. Packt Publishing.
